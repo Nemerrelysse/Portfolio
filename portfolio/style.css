@@ -1,0 +1,542 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #7A86A0;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 5rem;
+}
+
+.header_divider {
+  flex-grow: 1;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+}
+
+.menu a {
+  color: #f2f4e8;
+}
+
+.menu p {
+  margin: 0;
+  padding: 0;
+}
+
+.menu_item {
+  margin-left: 40px;
+}
+
+.submenu {
+  display: none;
+  background-color: #9dafc6;
+  box-shadow: 2px 4px 7px 0px rgba(44, 67, 109, 0.90);
+  list-style: none;
+  position: absolute;
+  padding: 15px 15px 15px 15px;
+}
+
+nav>ul li:hover .submenu {
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
+
+.subitem {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: solid 2px #7A86A0;
+  text-shadow: #7A86A0 2px 1px 1px;
+}
+
+.pink:hover {
+  color: #edc5ab;
+}
+
+.pink_letter::first-letter {
+  color: #edc5ab;
+}
+
+.yellow:hover {
+  color: #facf61;
+}
+
+.yellow::first-letter {
+  color: #facf61;
+}
+
+.blue:hover {
+  color: #c6dbf6;
+}
+
+.blue::first-letter {
+  color: #c6dbf6;
+}
+
+.lilac:hover {
+  color: #edcef3;
+}
+
+.lilac::first-letter {
+  color: #edcef3;
+}
+
+.homephoto {
+  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0) 100%), url(images/photo_home.jpg);
+  width: 100%;
+  margin: 0;
+  height: 687px;
+  padding: 0;
+  background-size: cover;
+  background-position: 50% 10%;
+}
+
+.topwave {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 100px;
+}
+
+
+.bottomwave {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.body_gradient {
+  background: linear-gradient(180deg, rgba(198, 219, 246, 1) 0%, rgba(228, 233, 236, 1) 50%, rgba(242, 244, 232, 1) 100%);
+  margin-bottom: -8px;
+}
+
+.projects {
+
+
+  padding-top: 60px;
+
+  padding-bottom: 0;
+
+}
+
+.projects_home {
+
+  text-align: center;
+}
+
+.titles {
+
+  display: inline-flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.50);
+  box-shadow: 2px 4px 7px 0px rgba(44, 67, 109, 0.20);
+  align-self: right;
+  flex-grow: 0.3;
+
+}
+
+.titles * {
+  text-align: end;
+  align-self: right;
+  display: inline;
+  margin-right: 30px;
+  color: #34456a;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.homeblock {
+  display: flex;
+}
+
+.divider {
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  display: inline;
+  color: #7A86A0;
+  font-weight: 700;
+  padding-top: 70px;
+  padding-right: 100px;
+  padding-left: 150px;
+  padding-bottom: 60px;
+  font-size: 2rem;
+  background-image: url(images/nuage4.png);
+  background-position: center;
+  background-size: 100% 100%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.projectgrid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  gap: 60px;
+}
+
+.project_item {
+  width: 200px;
+  height: 137px;
+  border-radius: 10%;
+  box-shadow: 2px 2px 0px 0px #EDC5AB, 2px 3px 5px 0px #FAFC61;
+  text-justify: center;
+  display: flex;
+
+}
+
+.img1 {
+  background-image: url(images/echecs1.jpg);
+  background-size: cover;
+}
+
+.img1:hover {
+  background-image: linear-gradient(128deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%), url(images/echecs1.jpg);
+
+}
+
+.img2 {
+  background-image: url(images/todolist.jpg);
+  background-size: cover;
+}
+
+.img2:hover {
+  background-image: linear-gradient(128deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%), url(images/todolist.jpg);
+
+}
+
+.img3 {
+  background-image: url(images/hex.jpg);
+  background-size: cover;
+}
+
+.img3:hover {
+  background-image: linear-gradient(128deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%), url(images/hex.jpg);
+
+}
+
+.img4 {
+  background-image: url(images/modelisation.jpg);
+  background-size: cover;
+}
+
+.img4:hover {
+  background-image: linear-gradient(128deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%), url(images/modelisation.jpg);
+
+}
+
+.img5 {
+  background-image: url(images/banque.jpg);
+  background-size: cover;
+}
+
+.img5:hover {
+  background-image: linear-gradient(128deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%), url(images/banque.jpg);
+
+}
+
+.img6 {
+  background-image: url(images/recette.jpg);
+  background-size: cover;
+}
+
+.img6:hover {
+  background-image: linear-gradient(128deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%), url(images/recette.jpg);
+
+}
+
+
+
+.project_title {
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #34456a;
+  opacity: 0;
+}
+
+.project_item:hover p {
+  opacity: 1;
+}
+
+.footwave {
+  width: 100%;
+  height: 200px;
+
+
+}
+
+.pres_title {
+  background-image: none;
+  color: #f2f4e8;
+  padding-left: 0;
+
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px;
+  padding-top: 100px;
+  padding-left: 200px;
+  gap: 60px;
+  background-image: linear-gradient(0deg, rgba(159, 150, 158, 1) 0%, rgba(143, 143, 159, 1) 45%, rgba(122, 134, 160, 1) 100%);
+  color: #f2f4e8;
+
+}
+
+.home_pres {
+  padding-top: 0;
+  width: 400px;
+
+}
+
+.chessphoto {
+  background-image: url(images/echecs1.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -8px;
+}
+
+.project_spacer {
+  height: 200px;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.dot {
+  color: #EDC5AB;
+  font-size: 2rem;
+}
+
+.title_project {
+  color: #7A86A0;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  justify-self: left;
+
+}
+
+.pres_project {
+  color: #34456a;
+  padding-left: 100px;
+}
+
+.tools p {
+  margin: 0;
+}
+
+.text {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  text-align: justify;
+}
+
+.git {
+  display: flex;
+  font-weight: 600;
+  color: rgba(159, 150, 158, 1);
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color: #34456a;
+  padding-left: 100px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 50px;
+}
+
+input,
+textarea {
+  max-width: 800px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 2px 2px 0px 0px #EDC5AB, 2px 3px 5px 0px #FAFC61;
+}
+
+*:focus {
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #9f969e;
+}
+
+
+button {
+  width: 200px;
+  color: #7A86A0;
+
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  background-color: #EDC5AB;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border: none;
+  box-shadow: 2px 2px 0px 0px #EDC5AB, 2px 3px 5px 0px #FAFC61;
+
+
+}
+
+button:hover {
+  background-color: #7A86A0;
+  color: #f2f4e8;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/pres_fond.png), url(images/pres_pic1.png);
+  background-size: cover;
+  background-position: center top;
+}
+
+.pres_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pres_content {
+  padding: 40px;
+  text-align: justify;
+  padding-right: 100px;
+}
+
+.link {
+  color: #edc5ab;
+}
+
+.link:hover {
+  color: #c6dbf6;
+}
+
+.git img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 10px;
+}
+
+.git:hover {
+  color: #7A86A0;
+}
+
+.todophoto {
+  background-image: url(images/todolist.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -8px;
+}
+
+.hexphoto {
+  background-image: url(images/hex.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -8px;
+}
+
+.modelphoto {
+  background-image: url(images/modelisation.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -8px;
+}
+
+.bankphoto {
+  background-image: url(images/banque.jpg);
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: -8px;
+}
+
+.pizzaphoto {
+  background-image: url(images/recette.jpg);
+  background-size: cover;
+  background-position: top;
+  margin-bottom: -8px;
+}
+
+.socials a img {
+  height: 2rem;
+  padding-right: 40px;
+}
+
+.socials {
+  padding-left: 100px;
+  padding-top: 40px;
+}
+
+.formation h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #7A86A0;
+}
+
+.formation {
+  padding-left: 50px;
+  color: #34456a;
+
+}
+
+.formation h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+}
+
+em {
+  font-weight: 600;
+}
